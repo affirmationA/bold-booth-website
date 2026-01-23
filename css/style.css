@@ -3006,6 +3006,14 @@ ul {
     margin-bottom: var(--spacing-lg);
 }
 
+.video-container video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    display: block;
+}
+
 .journey-video {
     width: 100%;
     height: auto;
