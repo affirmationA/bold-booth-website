@@ -4,162 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bold Booth - Wedding Edition | Interactive Wedding Entertainment | Book Your Date</title>
-    <meta name="description" content="Transform your wedding into an interactive entertainment experience. 10+ games, 4 hours coverage, $3,200 all-inclusive. The next generation of wedding entertainment.">
+    <meta name="description" content="Transform your wedding into an interactive entertainment experience. 10+ games, 4 hours coverage, $3,200 all-inclusive.">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/game-screenshots.css">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="spinner"></div>
+    <div class="loading-screen hidden">
+        <div class="loader"></div>
     </div>
 
     <!-- Navigation -->
     <header id="header">
-        <div class="nav-overlay" id="navOverlay"></div>
-        <div class="nav-container">
+        <nav class="nav-container">
             <a href="#home" class="nav-brand">
                 <img src="images/logo.png" alt="Bold Booth Logo" class="nav-logo">
                 <div class="nav-brand-text">
-                    <span class="nav-brand-name">BOLD BOOTH</span>
-                    <span class="nav-brand-tagline">Be Bold</span>
+                    <div class="nav-brand-name">BOLD BOOTH</div>
+                    <div class="nav-brand-tagline">Be Bold</div>
                 </div>
             </a>
             
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#overview" class="nav-link">How It Works</a></li>
-                <li><a href="#booth-interface" class="nav-link">The Booth</a></li>
-                <li><a href="#fishbowl-booth" class="nav-link">Fishbowl Design</a></li>
-                <li><a href="#scoreboard" class="nav-link">Big Screen</a></li>
-                <li><a href="#games" class="nav-link">10+ Games</a></li>
-                <li><a href="#game-help" class="nav-link">Customize</a></li>
-                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-                <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                <li><a href="#faq" class="nav-link">FAQ</a></li>
-                <li class="nav-cta">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#overview" class="nav-link">How It Works</a></li>
+                <li class="nav-item"><a href="#booth-interface" class="nav-link">The Booth</a></li>
+                <li class="nav-item"><a href="#scoreboard" class="nav-link">Big Screen</a></li>
+                <li class="nav-item"><a href="#games" class="nav-link">10+ Games</a></li>
+                <li class="nav-item"><a href="#game-help" class="nav-link">Customize</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                <li class="nav-item nav-cta">
                     <a href="#contact" class="btn btn-primary">Book Now</a>
                 </li>
             </ul>
-        </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+        </nav>
+        <div class="nav-overlay" id="navOverlay"></div>
     </header>
 
     <!-- Hero Section -->
     <section id="home">
         <div class="hero-background"></div>
         <div class="hero-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="hero-badge-icon">💍</span>
+                <span>Premium Wedding & Anniversary Entertainment</span>
+            </div>
+            <h1 class="hero-title">
+                The <span class="hero-title-highlight">Live Experience</span><br>
+                Your Guests Will Never Forget
+            </h1>
+            <p class="hero-subtitle">
+                The original "Fishbowl" booth where guests perform, compete, and create unforgettable memories—all captured in stunning HD and displayed live for everyone to enjoy.
+            </p>
+            <p class="hero-tagline">Be Bold</p>
+            <div class="hero-buttons">
+                <a href="#pricing" class="btn btn-primary btn-lg">
+                    <span>View Pricing</span>
+                    <span class="btn-icon">→</span>
+                </a>
+                <a href="#overview" class="btn btn-secondary btn-lg">
+                    <span>Learn More</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number">10+</div>
+                    <div class="hero-stat-label">Interactive Games</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">4 Hours</div>
+                    <div class="hero-stat-label">Coverage</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">100%</div>
+                    <div class="hero-stat-label">Uptime Guarantee</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Booth Interface Showcase - NEW -->
+    <section class="section section-booth-interface" id="booth-interface">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">💝 Premium Wedding & Anniversary Entertainment</div>
-                <h1 class="hero-title">Transform Your Wedding<br>Into a <span class="gradient-text">Live Experience</span></h1>
-                <p class="hero-brand-tagline">Be Bold</p>
-                <p class="hero-description">Interactive games, video memories, and unforgettable moments—all captured in our signature "Fishbowl" booth with crystal-clear rear wall.</p>
-                <p class="hero-subheadline">The Only Wedding Entertainment That Becomes a Permanent Time Capsule</p>
-                <p class="hero-note">✨ Perfect for weddings, vow renewals, and milestone anniversaries (10th, 25th, 50th+)</p>
-                
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">Interactive Games</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="stat-number">4</div>
-                        <div class="stat-label">Hours Coverage</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Uptime Guarantee</div>
+            <div class="section-header">
+                <span class="section-label">See It In Action</span>
+                <h2 class="section-title">The Booth Experience</h2>
+                <p class="section-description">This is what your guests see and interact with - a beautiful, intuitive interface where memories are captured</p>
+            </div>
+            
+            <div class="booth-showcase">
+                <div class="booth-image-container">
+                    <img src="images/booth-interface.png" alt="Bold Booth Interface Example" class="booth-interface-image">
+                    <div class="booth-overlay-label center-person">
+                        <div class="label-pointer"></div>
+                        <div class="label-content">
+                            <strong>Live Video Recording</strong>
+                            <p>Your guest appears here in real-time as they record their video message or play games</p>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="hero-buttons">
-                    <a href="#pricing" class="btn btn-primary btn-lg">
-                        <span>View Pricing</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    <a href="#overview" class="btn btn-secondary btn-lg">Learn More</a>
+                <div class="booth-features-grid">
+                    <div class="booth-feature-card">
+                        <div class="feature-icon">👤</div>
+                        <h4>Crystal-Clear Video</h4>
+                        <p>Guests see themselves in our signature "Fishbowl" booth with the clear rear wall showing the celebration behind them</p>
+                    </div>
+                    
+                    <div class="booth-feature-card">
+                        <div class="feature-icon">🎮</div>
+                        <h4>Choose Your Adventure</h4>
+                        <p>Beautiful game selection interface - guests pick from 9 interactive games and can choose their team</p>
+                    </div>
+                    
+                    <div class="booth-feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Instant Engagement</h4>
+                        <p>Intuitive touchscreen design makes it easy for guests of all ages to jump in and start creating memories</p>
+                    </div>
+                    
+                    <div class="booth-feature-card">
+                        <div class="feature-icon">💾</div>
+                        <h4>Automatic Capture</h4>
+                        <p>Every moment is recorded and saved - from game reactions to heartfelt messages, all delivered on your USB drive</p>
+                    </div>
                 </div>
-                
-                <div class="trust-badges">
-                    <div class="trust-badge">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                        <span><strong>Professional Setup</strong></span>
-                    </div>
-                    <div class="trust-badge">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                        <span><strong>USB Delivered in 1 Week</strong></span>
-                    </div>
-                    <div class="trust-badge">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                        </svg>
-                        <span>Contact: <strong>contact@theboldbooth.com</strong></span>
-                    </div>
+            </div>
+            
+            <div class="booth-callout">
+                <div class="callout-icon">✨</div>
+                <div class="callout-content">
+                    <h3>What Makes It Special</h3>
+                    <p>The center participant (shown above) is actively recording in the booth. Their friends and family are visible through the crystal-clear rear wall, creating authentic, candid moments where everyone is part of the memory. This is the magic of Bold Booth - technology that brings people together, not apart.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Booth Interface Section -->
-    <section id="booth-interface" class="section-booth-interface">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">The "Fishbowl" Booth Experience</h2>
-                <p class="section-subtitle">Our signature crystal-clear rear wall means everyone can see the action—creating energy, excitement, and crowd participation like never before.</p>
-            </div>
-            
-            <div class="booth-showcase">
-                <div class="booth-image-container">
-                    <img src="images/booth-interface.png" alt="Bold Booth Fishbowl Interface" class="booth-interface-image">
-                </div>
-                
-                <div class="booth-features-grid">
-                    <div class="booth-feature-card">
-                        <div class="booth-feature-icon">👀</div>
-                        <h3>Crystal-Clear Rear Wall</h3>
-                        <p>Unlike traditional photo booths with curtains, our transparent design lets the whole venue watch the fun unfold in real-time.</p>
-                    </div>
-                    <div class="booth-feature-card">
-                        <div class="booth-feature-icon">🎮</div>
-                        <h3>Interactive Touchscreen</h3>
-                        <p>Guests tap to play games, record videos, and answer questions—all captured in stunning HD quality.</p>
-                    </div>
-                    <div class="booth-feature-card">
-                        <div class="booth-feature-icon">🎬</div>
-                        <h3>Professional Recording</h3>
-                        <p>Every moment is captured with professional-grade video equipment. No blurry phone footage here.</p>
-                    </div>
-                    <div class="booth-feature-card">
-                        <div class="booth-feature-icon">⚡</div>
-                        <h3>Instant Results</h3>
-                        <p>Responses appear on the big screen immediately—keeping the energy high and guests engaged all night long.</p>
-                    </div>
-                </div>
-                
-                <div class="booth-center-note">
-                    <h4>Why the "Fishbowl" Design Changes Everything</h4>
-                    <p>Traditional photo booths hide guests behind curtains. Our transparent booth turns participants into performers—creating authentic reactions, natural laughs, and unforgettable entertainment for everyone watching.</p>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Fishbowl Booth Physical Design - NEW -->
     <section id="fishbowl-booth" class="section-fishbowl-booth">
         <div class="container">
@@ -273,601 +273,472 @@
             </div>
         </div>
     </section>
-
-    <!-- Guest Journey Video Section -->
-    <section id="video" class="section-guest-journey">
+    <!-- Guest Journey Video - NEW -->
+    <section class="section section-guest-journey">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Watch a Guest's Journey</h2>
-                <p class="section-subtitle">From stepping into the booth to seeing their answers on the big screen—here's what your guests will experience.</p>
+                <span class="section-label">The Complete Journey</span>
+                <h2 class="section-title">From Welcome to Wow</h2>
+                <p class="section-description">Watch the magic unfold - see exactly what your guests experience from the moment they approach the booth</p>
             </div>
             
             <div class="journey-content">
                 <div class="video-showcase">
                     <div class="video-container">
-                        <video class="journey-video" controls playsinline webkit-playsinline>
+                        <video controls playsinline webkit-playsinline class="journey-video">
                             <source src="images/guest-journey-video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="video-caption">
-                        <span class="video-caption-icon">🎥</span>
-                        <p><strong>Real guest experience:</strong> Watch how easy and fun it is to play!</p>
+                        <span class="caption-icon">🎥</span>
+                        <p>Watch the full guest experience from start to finish</p>
                     </div>
                 </div>
                 
-                <div class="video-features">
-                    <div class="video-feature">
-                        <div class="video-feature-icon">🎯</div>
-                        <h4>Step 1: Choose Your Game</h4>
-                        <p>Guests select from 10+ interactive games designed to entertain and capture authentic moments.</p>
+                <div class="journey-steps">
+                    <div class="journey-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Welcoming Home Screen</h3>
+                            <p>Guests are greeted by a beautiful, inviting home screen displaying your wedding details and branding. The interface is intuitive and immediately engaging - no confusion, just excitement to dive in.</p>
+                        </div>
                     </div>
-                    <div class="video-feature">
-                        <div class="video-feature-icon">📹</div>
-                        <h4>Step 2: Get Recorded</h4>
-                        <p>Professional HD cameras capture every laugh, answer, and reaction in crystal-clear quality.</p>
+                    
+                    <div class="journey-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Personalized Hello</h3>
+                            <p>A warm welcome message appears featuring your names and wedding date. This personal touch makes every guest feel special and connected to your celebration from the very first screen.</p>
+                        </div>
                     </div>
-                    <div class="video-feature">
-                        <div class="video-feature-icon">📺</div>
-                        <h4>Step 3: See It Live</h4>
-                        <p>Responses instantly appear on the big screen for the whole venue to see and enjoy together.</p>
+                    
+                    <div class="journey-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Bride & Groom Welcome Video</h3>
+                            <p>Your pre-recorded welcome message plays - you greet your guests, explain how Bold Booth works, and invite them to have fun. This personal video makes guests feel welcomed by YOU, creating an immediate emotional connection.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Choose Your Adventure</h3>
+                            <p>The stunning game selection screen appears with all 9 interactive games beautifully displayed. Guests can see descriptions, choose their team (Team Bride or Team Groom), and select which game they want to play. The interface is so intuitive that guests of all ages jump right in.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Let the Fun Begin!</h3>
+                            <p>Once they select a game, guests see themselves in the "Fishbowl" with the celebration visible behind them through the crystal-clear rear wall. The recording begins, memories are captured, and the magic of Bold Booth comes to life. Every laugh, every reaction, every moment - saved forever.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="journey-highlight">
+                <div class="highlight-content">
+                    <div class="highlight-icon">✨</div>
+                    <div class="highlight-text">
+                        <h3>The Bold Booth Difference</h3>
+                        <p>Unlike traditional photo booths where guests are hidden behind curtains, Bold Booth's transparent "Fishbowl" design means everyone at your reception can watch, cheer, and get excited. It's not just a booth—it's the entertainment centerpiece of your celebration!</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Big Screen Experience Section -->
-    <section id="scoreboard" class="section-scoreboard">
+    <!-- Big Screen / Scoreboard Display - NEW -->
+    <section class="section section-scoreboard" id="scoreboard">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">The Big Screen Experience</h2>
-                <p class="section-subtitle">Real-time results on a projector or large monitor keep your guests engaged, competing, and cheering all night long.</p>
+                <span class="section-label">Live Scoreboard Display - NEW</span>
+                <h2 class="section-title">Everyone Watches. Everyone Plays.</h2>
+                <p class="section-description">Your venue's big screen becomes the heart of the action - live scores, hilarious moments, and team competition that gets the entire reception involved</p>
             </div>
             
             <div class="scoreboard-content">
                 <div class="scoreboard-image-wrapper">
-                    <img src="images/scoreboard-display.png" alt="Bold Booth Live Scoreboard Display" class="scoreboard-image">
+                    <img src="images/scoreboard-display.png" alt="Live Scoreboard on Big Screen" class="scoreboard-image">
                     <div class="live-indicator">
-                        <span class="live-dot"></span>
-                        <span class="live-text">Live</span>
+                        <div class="live-dot"></div>
+                        <span class="live-text">LIVE</span>
                     </div>
                 </div>
                 
                 <div class="scoreboard-features">
                     <div class="scoreboard-feature">
-                        <div class="scoreboard-feature-icon">🏆</div>
+                        <div class="feature-icon">🏆</div>
                         <h4>Team Leaderboards</h4>
-                        <p>Team Bride vs Team Groom compete in real-time. Watch the scores update instantly!</p>
+                        <p>Team Bride vs. Team Groom battle live on screen - scores update instantly, creating friendly competition and energy throughout your reception</p>
                     </div>
+                    
                     <div class="scoreboard-feature">
-                        <div class="scoreboard-feature-icon">📊</div>
+                        <div class="feature-icon">📊</div>
                         <h4>Live Poll Results</h4>
-                        <p>See what everyone's voting for in "Most Likely To" and "End of Night Challenge."</p>
+                        <p>Guest votes and game results display in real-time - everyone sees who's winning, who said what, and what hilarious moments are unfolding</p>
                     </div>
+                    
                     <div class="scoreboard-feature">
-                        <div class="scoreboard-feature-icon">⚡</div>
+                        <div class="feature-icon">⚡</div>
                         <h4>Instant Updates</h4>
-                        <p>Every game result appears on screen immediately—no delays, no waiting.</p>
+                        <p>The moment someone plays in the booth, the big screen updates - no delay, no waiting, just instant entertainment for your entire reception</p>
                     </div>
+                    
                     <div class="scoreboard-feature">
-                        <div class="scoreboard-feature-icon">🎉</div>
+                        <div class="feature-icon">🎉</div>
                         <h4>Crowd Engagement</h4>
-                        <p>Guests cheer, react, and stay invested in the action happening at the booth.</p>
+                        <p>Guests who aren't in the booth stay engaged by watching the action unfold live - your reception becomes an interactive viewing party!</p>
                     </div>
                 </div>
                 
-                <div class="scoreboard-callout">
-                    <div class="callout-item">
-                        <span class="callout-icon">🖥️</span>
-                        <span class="callout-text">Works with your venue's projector or TV</span>
+                <div class="scoreboard-callouts">
+                    <div class="scoreboard-callout">
+                        <h4>Works with Your Venue</h4>
+                        <p>We connect to your venue's projector or TV - no extra equipment needed. If your venue has a screen, we'll make it come alive!</p>
                     </div>
-                    <div class="callout-item">
-                        <span class="callout-icon">📡</span>
-                        <span class="callout-text">Runs on our private network—no venue WiFi needed</span>
+                    
+                    <div class="scoreboard-callout">
+                        <h4>100% Reliable</h4>
+                        <p>Our system runs on a private network - no WiFi needed, no lag, no technical issues. Just smooth, seamless entertainment all night long.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- How It Works Section -->
-    <section id="overview" class="section-overview">
+
+    <!-- Overview Section -->
+    <section class="section section-overview" id="overview">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">How It Works</h2>
-                <p class="section-subtitle">Three simple steps to create memories that last forever.</p>
+                <span class="section-label">How It Works</span>
+                <h2 class="section-title">Three Simple Steps to Unforgettable Entertainment</h2>
+                <p class="section-description">We handle everything - you just enjoy watching your guests have the time of their lives</p>
             </div>
             
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">🎮</div>
-                    <h3>Guests Play Interactive Games</h3>
-                    <p>Your guests step into the Fishbowl booth and choose from 10+ interactive games—everything from trivia to video messages to emoji puzzles.</p>
-                    <ul class="step-features">
-                        <li>10+ games to choose from</li>
-                        <li>HD video recording for each game</li>
-                        <li>Crystal-clear Fishbowl booth design</li>
-                        <li>Team Bride vs Team Groom competition</li>
-                        <li>Every player appears on the leaderboard</li>
-                        <li>Professional HD video captures every moment</li>
-                    </ul>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="overview-icon">🎮</div>
+                    <h3>10+ Interactive Games</h3>
+                    <p>Your guests choose from our collection of hilarious, engaging games - from "Most Likely To" to "Truth or Dare" to emoji translation challenges. Every game is designed to create authentic, entertaining moments that make incredible memories.</p>
                 </div>
                 
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">📺</div>
-                    <h3>Everyone Watches The Action Live</h3>
-                    <p>Results appear instantly on a projector or large monitor—creating energy, laughter, and friendly competition throughout your reception.</p>
-                    <ul class="step-features">
-                        <li>Live standings on the big screen</li>
-                        <li>Team rankings update in real-time</li>
-                        <li>Voting results shown instantly</li>
-                        <li>Team Bride vs Team Groom scores</li>
-                        <li>Guests cheer and react together</li>
-                    </ul>
+                <div class="overview-card">
+                    <div class="overview-icon">📹</div>
+                    <h3>Professional HD Cameras</h3>
+                    <p>Our cutting-edge cameras capture every laugh, every reaction, every precious moment in stunning high definition. Your guests look incredible on camera, and the footage is so good you'll watch it for years to come.</p>
                 </div>
                 
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">💝</div>
-                    <h3>Relive The Memories Forever</h3>
-                    <p>After your event, we deliver every video, message, and highlight on a branded USB drive—your permanent time capsule.</p>
-                    <ul class="step-features">
-                        <li>USB drive delivered within 1 week or less</li>
-                        <li>Branded USB with your names and date</li>
-                        <li>Optional online viewing page for all guests</li>
-                        <li>Professional editing and organization</li>
-                        <li>Keep your memories forever</li>
-                    </ul>
+                <div class="overview-card">
+                    <div class="overview-icon">📺</div>
+                    <h3>Live Big Screen Display</h3>
+                    <p>Your venue's projector or TV becomes the entertainment hub - live scores, game results, and hilarious moments appear instantly. Guests who aren't in the booth stay engaged by watching the action unfold in real-time.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Games Section -->
-    <section id="games" class="section-games">
+    <section class="section section-games" id="games">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">10+ Interactive Games</h2>
-                <p class="section-subtitle">Every game is designed to entertain your guests and capture authentic, hilarious moments you'll treasure forever.</p>
+                <span class="section-label">Interactive Entertainment</span>
+                <h2 class="section-title">10+ Games Your Guests Will Love</h2>
+                <p class="section-description">Every game is designed to create authentic moments, genuine laughter, and memories you'll treasure forever</p>
             </div>
             
             <div class="games-grid">
                 <div class="game-card">
-                    <div class="game-header">
-                        <div class="game-icon">🧠</div>
-                        <div class="game-title-wrapper">
-                            <div class="game-number">Game 1</div>
-                            <h3>Play for Points</h3>
+                    <img src="images/game-welcome-screen.png" alt="Welcome Screen Game" class="game-image">
+                    <div class="game-content">
+                        <h3 class="game-title">1. Welcome Messages</h3>
+                        <p class="game-description">Guests record heartfelt congratulations, funny stories, or words of wisdom for the happy couple.</p>
+                        <div class="game-features">
+                            <span class="game-tag">Emotional</span>
+                            <span class="game-tag">Personal</span>
+                            <span class="game-tag">Keepsake</span>
                         </div>
-                    </div>
-                    <div class="game-badge">Trivia • Team Competition • Custom Questions • Live Scoring</div>
-                    <p class="game-description">Test your knowledge with custom trivia categories. Every correct answer adds points to your team's total!</p>
-                    <div class="game-features">
-                        <span class="game-feature-tag">Custom Categories</span>
-                        <span class="game-feature-tag">Team Competition</span>
-                        <span class="game-feature-tag">Live Leaderboard</span>
                     </div>
                 </div>
                 
                 <div class="game-card">
-                    <div class="game-header">
-                        <div class="game-icon">😊</div>
-                        <div class="game-title-wrapper">
-                            <div class="game-number">Game 2</div>
-                            <h3>Emoji Translator</h3>
+                    <img src="images/game-play-for-points.png" alt="Play for Points Game" class="game-image">
+                    <div class="game-content">
+                        <h3 class="game-title">2. Play for Points</h3>
+                        <p class="game-description">Answer trivia questions about the bride & groom to earn points for your team. Live leaderboard on the big screen!</p>
+                        <div class="game-features">
+                            <span class="game-tag">Competitive</span>
+                            <span class="game-tag">Team-Based</span>
+                            <span class="game-tag">Live Scores</span>
                         </div>
-                    </div>
-                    <div class="game-badge">Video Recording • Custom Puzzles • Fun & Creative</div>
-                    <p class="game-description">Decode emoji puzzles that spell out phrases, movies, and inside jokes. Guests record their guesses on video!</p>
-                    <div class="game-features">
-                        <span class="game-feature-tag">Emoji Puzzles</span>
-                        <span class="game-feature-tag">Video Recording</span>
-                        <span class="game-feature-tag">Custom Puzzles</span>
                     </div>
                 </div>
                 
                 <div class="game-card">
-                    <div class="game-header">
-                        <div class="game-icon">🎭</div>
-                        <div class="game-title-wrapper">
-                            <div class="game-number">Game 3</div>
-                            <h3>Truth or Dare</h3>
+                    <img src="images/game-quick-message.png" alt="Quick Message Game" class="game-image">
+                    <div class="game-content">
+                        <h3 class="game-title">3. Quick Messages</h3>
+                        <p class="game-description">30-second messages where guests share their favorite memories, inside jokes, or advice for the newlyweds.</p>
+                        <div class="game-features">
+                            <span class="game-tag">Fast-Paced</span>
+                            <span class="game-tag">Authentic</span>
+                            <span class="game-tag">Hilarious</span>
                         </div>
-                    </div>
-                    <div class="game-badge">Video Recording • Custom Prompts • High Energy</div>
-                    <p class="game-description">Your guests face hilarious dares and revealing truths—all captured on video for epic memories.</p>
-                    <div class="game-features">
-                        <span class="game-feature-tag">Custom Prompts</span>
-                        <span class="game-feature-tag">Video Recording</span>
-                        <span class="game-feature-tag">High Energy</span>
                     </div>
                 </div>
                 
                 <div class="game-card">
-                    <div class="game-header">
-                        <div class="game-icon">💌</div>
-                        <div class="game-title-wrapper">
-                            <div class="game-number">Game 4</div>
-                            <h3>Quick Message</h3>
+                    <img src="images/game-most-likely-to.png" alt="Most Likely To Game" class="game-image">
+                    <div class="game-content">
+                        <h3 class="game-title">4. Most Likely To</h3>
+                        <p class="game-description">Guests vote on "Most Likely To" scenarios about the bride & groom. Results display live on the big screen!</p>
+                        <div class="game-features">
+                            <span class="game-tag">Interactive</span>
+                            <span class="game-tag">Voting</span>
+                            <span class="game-tag">Crowd Favorite</span>
                         </div>
-                    </div>
-                    <div class="game-badge">Video Recording • Heartfelt • Permanent Keepsake</div>
-                    <p class="game-description">Guests record heartfelt video messages directly to the couple—advice, well-wishes, or favorite memories.</p>
-                    <div class="game-features">
-                        <span class="game-feature-tag">Video Messages</span>
-                        <span class="game-feature-tag">Heartfelt</span>
-                        <span class="game-feature-tag">Keepsake</span>
                     </div>
                 </div>
                 
                 <div class="game-card">
-                    <div class="game-header">
-                        <div class="game-icon">❓</div>
-                        <div class="game-title-wrapper">
-                            <div class="game-number">Game 5</div>
-                            <h3>Q&A Videos</h3>
+                    <img src="images/game-finish-the-sentence.png" alt="Finish the Sentence Game" class="game-image">
+                    <div class="game-content">
+                        <h3 class="game-title">5. Finish the Sentence</h3>
+                        <p class="game-description">Complete prompts like "The best thing about [Bride] is..." or "Marriage advice: Never go to bed without..."</p>
+                        <div class="game-features">
+                            <span class="game-tag">Creative</span>
+                            <span class="game-tag">Funny</span>
+                            <span class="game-tag">Heartfelt</span>
                         </div>
-                    </div>
-                    <div class="game-badge">Video Recording • Custom Questions • Memory Keeper</div>
-                    <p class="game-description">Answer custom questions about the couple, the wedding, or your favorite memories—all on video.</p>
-                    <div class="game-features">
-                        <span class="game-feature-tag">Custom Q&A</span>
-                        <span class="game-feature-tag">Video Recording</span>
-                        <span class="game-feature-tag">Personal Stories</span>
                     </div>
                 </div>
                 
                 <div class="game-card">
-                    <div class="game-header">
-                        <div class="game-icon">⚡</div>
-                        <div class="game-title-wrapper">
-                            <div class="game-number">Game 6</div>
-                            <h3>The First Two</h3>
+                    <img src="images/game-end-of-night.png" alt="End of Night Challenge Game" class="game-image">
+                    <div class="game-content">
+                        <h3 class="game-title">6. End of Night Challenge</h3>
+                        <p class="game-description">Guests vote on end-of-night challenges for the bride & groom - will they sing karaoke? Dance? Give a speech?</p>
+                        <div class="game-features">
+                            <span class="game-tag">Guest Voting</span>
+                            <span class="game-tag">Live Tallying</span>
+                            <span class="game-tag">Grand Finale</span>
                         </div>
-                    </div>
-                    <div class="game-badge">Video Recording • Fast Paced • High Energy</div>
-                    <p class="game-description">Race to name two things in a category before time runs out! Fast, fun, and hilarious on video.</p>
-                    <div class="game-features">
-                        <span class="game-feature-tag">Fast Paced</span>
-                        <span class="game-feature-tag">Video Recording</span>
-                        <span class="game-feature-tag">Team Points</span>
-                    </div>
-                </div>
-                
-                <div class="game-card">
-                    <div class="game-header">
-                        <div class="game-icon">👥</div>
-                        <div class="game-title-wrapper">
-                            <div class="game-number">Game 7</div>
-                            <h3>Most Likely To</h3>
-                        </div>
-                    </div>
-                    <div class="game-badge">Live Voting • Instant Results • Crowd Favorite</div>
-                    <p class="game-description">Vote on who's most likely to do what—results appear instantly on the big screen for everyone to see!</p>
-                    <div class="game-features">
-                        <span class="game-feature-tag">Live Voting</span>
-                        <span class="game-feature-tag">Instant Results</span>
-                        <span class="game-feature-tag">Big Screen Display</span>
-                    </div>
-                </div>
-                
-                <div class="game-card">
-                    <div class="game-header">
-                        <div class="game-icon">✍️</div>
-                        <div class="game-title-wrapper">
-                            <div class="game-number">Game 8</div>
-                            <h3>Finish the Sentence</h3>
-                        </div>
-                    </div>
-                    <div class="game-badge">Video Recording • Multiple Choice • Team Points</div>
-                    <p class="game-description">Pick the funniest way to complete sentences about the couple—recorded on video and scored for your team.</p>
-                    <div class="game-features">
-                        <span class="game-feature-tag">Multiple Choice</span>
-                        <span class="game-feature-tag">Video Recording</span>
-                        <span class="game-feature-tag">Team Points</span>
-                    </div>
-                </div>
-                
-                <div class="game-card">
-                    <div class="game-header">
-                        <div class="game-icon">🌟</div>
-                        <div class="game-title-wrapper">
-                            <div class="game-number">Game 9</div>
-                            <h3>End of Night Challenge</h3>
-                        </div>
-                    </div>
-                    <div class="game-badge">Live Voting • High Stakes • Unforgettable</div>
-                    <p class="game-description">The entire venue votes on challenges for the couple or wedding party to perform. The grand finale!</p>
-                    <div class="game-features">
-                        <span class="game-feature-tag">Live Voting</span>
-                        <span class="game-feature-tag">Crowd Participation</span>
-                        <span class="game-feature-tag">Epic Finale</span>
-                    </div>
-                </div>
-                
-                <div class="game-card">
-                    <div class="game-header">
-                        <div class="game-icon">🔥</div>
-                        <div class="game-title-wrapper">
-                            <div class="game-number">Game 10</div>
-                            <h3>The Hot Seat</h3>
-                        </div>
-                    </div>
-                    <div class="game-badge">Rapid Fire • Video Recording • High Energy</div>
-                    <p class="game-description">One person in the hot seat, rapid-fire questions from the kiosk. Fast-paced, hilarious, and revealing!</p>
-                    <div class="game-features">
-                        <span class="game-feature-tag">Rapid Fire</span>
-                        <span class="game-feature-tag">Video Recording</span>
-                        <span class="game-feature-tag">Fast & Fun</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Game Help / Customization Section -->
-    <section id="game-help" class="section-game-help">
+
+    <!-- Game Screenshots Gallery - Real Kiosk Interfaces -->
+    <section class="section section-game-screenshots">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Need Help Creating Game Questions?</h2>
-                <p class="section-subtitle">We've got you covered with 100+ ready-to-use questions, prompts, and challenges. Just pick what you like or customize them to match your style!</p>
+                <span class="section-label">Real Game Interfaces</span>
+                <h2 class="section-title">See What Your Guests Will Play</h2>
+                <p class="section-description">These are actual screenshots from our booth - beautiful, intuitive, and incredibly fun!</p>
+            </div>
+            
+            <div class="screenshots-gallery">
+                <!-- Screenshot 1: End of Night Challenge -->
+                <div class="screenshot-item">
+                    <div class="screenshot-image-wrapper">
+                        <img src="images/game-end-of-night-continued.png" alt="End of Night Challenge Options" class="screenshot-image">
+                    </div>
+                    <div class="screenshot-info">
+                        <h4 class="screenshot-title">End of Night Challenge (Continued)</h4>
+                        <p class="screenshot-description">More surprise options appear as guests scroll - slow-motion dances, surprise toasts, karaoke performances, and dramatic lip-syncs. Bride & groom select which ones appear!</p>
+                        <div class="screenshot-features">
+                            <span class="feature-tag">Scrollable Options</span>
+                            <span class="feature-tag">Custom Challenges</span>
+                            <span class="feature-tag">Real-Time Votes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Screenshot 2: Emoji Translator -->
+                <div class="screenshot-item">
+                    <div class="screenshot-image-wrapper">
+                        <img src="images/game-emoji-translator.png" alt="Emoji Translator Game" class="screenshot-image">
+                    </div>
+                    <div class="screenshot-info">
+                        <h4 class="screenshot-title">Emoji Translator</h4>
+                        <p class="screenshot-description">Guests decode emoji puzzles that spell out phrases, movie titles, or song names. Example: "💍 💋" = "First Kiss". They record their guesses on video!</p>
+                        <div class="screenshot-features">
+                            <span class="feature-tag">Emoji Puzzles</span>
+                            <span class="feature-tag">Video Recording</span>
+                            <span class="feature-tag">Auto-Reveal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="screenshots-cta">
+                <h3>Ready to See These Games at Your Wedding?</h3>
+                <p>All games are fully customizable - we'll work with you to add your photos, personalize questions, and create an experience that's uniquely yours!</p>
+                <a href="#pricing" class="btn btn-primary btn-lg">View Pricing & Book Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- Game Customization & Help Section -->
+    <section class="section section-game-help" id="game-help">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Fully Customizable</span>
+                <h2 class="section-title">We'll Customize Every Game for You</h2>
+                <p class="section-description">Here are examples of how we'll personalize each game with your details, photos, and inside jokes</p>
             </div>
             
             <div class="game-help-intro">
-                <div class="help-icon">💡</div>
+                <div class="help-icon">🎨</div>
                 <div class="help-text">
-                    <h3>100+ Pre-Written Questions Ready to Use</h3>
-                    <p>Browse our curated collection below, or create your own through the Client Portal. Every question, prompt, and puzzle can be customized to fit your wedding perfectly.</p>
+                    <h3>Your Wedding, Your Way</h3>
+                    <p>Every question, every prompt, every detail is customized to match your relationship, your personalities, and your love story. We work with you to make Bold Booth feel like it was made just for you - because it is!</p>
                 </div>
             </div>
             
-            <div class="customization-grid">
-                <!-- Groom Questions -->
-                <div class="customization-category">
-                    <div class="category-header">
-                        <div class="category-icon">🤵</div>
-                        <div>
-                            <h3>Groom Questions</h3>
-                            <span class="category-count">10 Questions</span>
-                        </div>
+            <div class="game-examples">
+                <!-- Play for Points Example -->
+                <div class="game-example">
+                    <div class="game-example-header">
+                        <h4>Play for Points - Sample Questions</h4>
+                        <p>We'll create 20+ trivia questions about your relationship, inside jokes, and love story</p>
                     </div>
+                    
                     <div class="question-list">
-                        <div class="question-item">What's his hidden talent?</div>
-                        <div class="question-item">What's his go-to karaoke song?</div>
-                        <div class="question-item">What was his first job?</div>
-                        <div class="question-item">What's his guilty pleasure TV show?</div>
-                        <div class="question-item">What's his biggest fear?</div>
-                        <div class="question-item">What's his favorite way to spend a Sunday?</div>
-                        <div class="question-item">What's one thing he can't live without?</div>
-                        <div class="question-item">What's his most embarrassing moment?</div>
-                        <div class="question-item">What's his dream vacation destination?</div>
-                        <div class="question-item">What's his signature dance move?</div>
+                        <div class="question-item">
+                            <div class="question-number">Q1</div>
+                            <div class="question-text">Where did Sarah and Tom have their first date?</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">Q2</div>
+                            <div class="question-text">What's Tom's go-to karaoke song?</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">Q3</div>
+                            <div class="question-text">How many countries have they traveled to together?</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">Q4</div>
+                            <div class="question-text">What's Sarah's favorite romantic comedy?</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">Q5</div>
+                            <div class="question-text">Where did Tom propose?</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">Q6</div>
+                            <div class="question-text">What's their favorite restaurant?</div>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Bride Questions -->
-                <div class="customization-category">
-                    <div class="category-header">
-                        <div class="category-icon">👰</div>
-                        <div>
-                            <h3>Bride Questions</h3>
-                            <span class="category-count">10 Questions</span>
-                        </div>
+                <!-- Most Likely To Example -->
+                <div class="game-example">
+                    <div class="game-example-header">
+                        <h4>Most Likely To - Sample Scenarios</h4>
+                        <p>Guests vote on fun scenarios - results appear live on the big screen!</p>
                     </div>
-                    <div class="question-list">
-                        <div class="question-item">What's her favorite rom-com?</div>
-                        <div class="question-item">What's her Starbucks order?</div>
-                        <div class="question-item">What's her biggest pet peeve?</div>
-                        <div class="question-item">What's her secret superpower?</div>
-                        <div class="question-item">What's her favorite season?</div>
-                        <div class="question-item">What's her go-to comfort food?</div>
-                        <div class="question-item">What's her dream car?</div>
-                        <div class="question-item">What's her favorite holiday?</div>
-                        <div class="question-item">What's she most likely to splurge on?</div>
-                        <div class="question-item">What's her hidden talent?</div>
+                    
+                    <div class="truth-dare-grid">
+                        <div class="truth-dare-card">
+                            <h5>Most likely to...</h5>
+                            <p>...forget where they parked the car?</p>
+                        </div>
+                        <div class="truth-dare-card">
+                            <h5>Most likely to...</h5>
+                            <p>...win an argument?</p>
+                        </div>
+                        <div class="truth-dare-card">
+                            <h5>Most likely to...</h5>
+                            <p>...plan the perfect vacation?</p>
+                        </div>
+                        <div class="truth-dare-card">
+                            <h5>Most likely to...</h5>
+                            <p>...burn dinner?</p>
+                        </div>
+                        <div class="truth-dare-card">
+                            <h5>Most likely to...</h5>
+                            <p>...stay up late binge-watching shows?</p>
+                        </div>
+                        <div class="truth-dare-card">
+                            <h5>Most likely to...</h5>
+                            <p>...become Instagram famous?</p>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Couple Questions -->
-                <div class="customization-category">
-                    <div class="category-header">
-                        <div class="category-icon">💑</div>
-                        <div>
-                            <h3>Couple Questions</h3>
-                            <span class="category-count">10 Questions</span>
-                        </div>
+                <!-- Finish the Sentence Example -->
+                <div class="game-example">
+                    <div class="game-example-header">
+                        <h4>Finish the Sentence - Sample Prompts</h4>
+                        <p>Guests complete personalized prompts about the bride & groom</p>
                     </div>
-                    <div class="question-list">
-                        <div class="question-item">Where did they meet?</div>
-                        <div class="question-item">What was their first date?</div>
-                        <div class="question-item">Who said "I love you" first?</div>
-                        <div class="question-item">What's their favorite restaurant?</div>
-                        <div class="question-item">Where did the proposal happen?</div>
-                        <div class="question-item">What's their song?</div>
-                        <div class="question-item">What do they argue about most?</div>
-                        <div class="question-item">What's their favorite activity together?</div>
-                        <div class="question-item">Who's the better cook?</div>
-                        <div class="question-item">Where's their dream honeymoon?</div>
-                    </div>
-                </div>
-                
-                <!-- First To (Quick Thinking) -->
-                <div class="customization-category">
-                    <div class="category-header">
-                        <div class="category-icon">⚡</div>
-                        <div>
-                            <h3>First To (Quick Thinking)</h3>
-                            <span class="category-count">10 Prompts</span>
-                        </div>
-                    </div>
-                    <div class="question-list">
-                        <div class="question-item">Name two things you'd bring to a deserted island</div>
-                        <div class="question-item">Name two celebrities you'd invite to dinner</div>
-                        <div class="question-item">Name two songs that make you cry</div>
-                        <div class="question-item">Name two things you're afraid of</div>
-                        <div class="question-item">Name two childhood memories with the couple</div>
-                        <div class="question-item">Name two things that describe the bride/groom</div>
-                        <div class="question-item">Name two places you'd love to travel together</div>
-                        <div class="question-item">Name two words of advice for the couple</div>
-                        <div class="question-item">Name two reasons you love weddings</div>
-                        <div class="question-item">Name two things that make a marriage work</div>
-                    </div>
-                </div>
-                
-                <!-- Most Likely To -->
-                <div class="customization-category">
-                    <div class="category-header">
-                        <div class="category-icon">👥</div>
-                        <div>
-                            <h3>Most Likely To (Voting)</h3>
-                            <span class="category-count">10 Options</span>
-                        </div>
-                    </div>
-                    <div class="question-list">
-                        <div class="question-item">Most likely to forget the anniversary</div>
-                        <div class="question-item">Most likely to burn dinner</div>
-                        <div class="question-item">Most likely to win an argument</div>
-                        <div class="question-item">Most likely to fall asleep during a movie</div>
-                        <div class="question-item">Most likely to plan spontaneous trips</div>
-                        <div class="question-item">Most likely to be late</div>
-                        <div class="question-item">Most likely to cry at commercials</div>
-                        <div class="question-item">Most likely to hog the blankets</div>
-                        <div class="question-item">Most likely to become famous</div>
-                        <div class="question-item">Most likely to spoil their kids</div>
-                    </div>
-                </div>
-                
-                <!-- Finish the Sentence -->
-                <div class="customization-category">
-                    <div class="category-header">
-                        <div class="category-icon">✍️</div>
-                        <div>
-                            <h3>Finish the Sentence (Multiple Choice)</h3>
-                            <span class="category-count">5 Scenarios</span>
-                        </div>
-                    </div>
+                    
                     <div class="sentence-options">
                         <div class="sentence-option">
-                            <strong>Their biggest argument will be about:</strong><br>
-                            <span class="option-label">A)</span> What to watch on TV<br>
-                            <span class="option-label">B)</span> Where to eat<br>
-                            <span class="option-label">C)</span> Whose turn to do dishes<br>
-                            <span class="option-label">D)</span> The thermostat
+                            <strong>The best thing about Sarah is...</strong>
+                            <p>Example: "...her infectious laugh that lights up any room!"</p>
                         </div>
                         <div class="sentence-option">
-                            <strong>On their honeymoon, they'll:</strong><br>
-                            <span class="option-label">A)</span> Sleep all day<br>
-                            <span class="option-label">B)</span> Adventure non-stop<br>
-                            <span class="option-label">C)</span> Eat everything<br>
-                            <span class="option-label">D)</span> Take 1,000 photos
+                            <strong>Tom and Sarah's love story is special because...</strong>
+                            <p>Example: "...they prove that best friends make the best partners!"</p>
                         </div>
                         <div class="sentence-option">
-                            <strong>In 10 years, they'll be:</strong><br>
-                            <span class="option-label">A)</span> World travelers<br>
-                            <span class="option-label">B)</span> Suburban parents<br>
-                            <span class="option-label">C)</span> Business moguls<br>
-                            <span class="option-label">D)</span> Still newlyweds
+                            <strong>Marriage advice: Never go to bed without...</strong>
+                            <p>Example: "...saying 'I love you' and giving a goodnight kiss!"</p>
                         </div>
                         <div class="sentence-option">
-                            <strong>Their love language is:</strong><br>
-                            <span class="option-label">A)</span> Acts of service<br>
-                            <span class="option-label">B)</span> Quality time<br>
-                            <span class="option-label">C)</span> Physical touch<br>
-                            <span class="option-label">D)</span> Words of affirmation
-                        </div>
-                        <div class="sentence-option">
-                            <strong>The secret to their relationship is:</strong><br>
-                            <span class="option-label">A)</span> Laughter<br>
-                            <span class="option-label">B)</span> Communication<br>
-                            <span class="option-label">C)</span> Pizza<br>
-                            <span class="option-label">D)</span> Separate bathrooms
+                            <strong>In 10 years, I bet Tom and Sarah will be...</strong>
+                            <p>Example: "...traveling the world with their two kids and a golden retriever!"</p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- End of Night Challenges -->
-                <div class="customization-category">
-                    <div class="category-header">
-                        <div class="category-icon">🌟</div>
-                        <div>
-                            <h3>End of Night Challenges</h3>
-                            <span class="category-count">10 Challenges</span>
-                        </div>
+                <!-- End of Night Challenge Example -->
+                <div class="game-example">
+                    <div class="game-example-header">
+                        <h4>End of Night Challenge - Sample Options</h4>
+                        <p>Guests vote on surprise challenges for the bride & groom to complete!</p>
                     </div>
-                    <div class="question-list">
-                        <div class="question-item">Repeat their first dance</div>
-                        <div class="question-item">Sing a karaoke duet</div>
-                        <div class="question-item">Do 10 pushups together</div>
-                        <div class="question-item">Tell the story of the proposal again</div>
-                        <div class="question-item">Share their favorite memory of each other</div>
-                        <div class="question-item">Recreate their first date</div>
-                        <div class="question-item">Dance with parents/best friends</div>
-                        <div class="question-item">Give a toast to the wedding party</div>
-                        <div class="question-item">Share what they're most excited for in marriage</div>
-                        <div class="question-item">Lead a conga line around the venue</div>
+                    
+                    <div class="challenge-grid">
+                        <div class="challenge-option">
+                            <span class="challenge-emoji">🎤</span>
+                            <span class="challenge-text">Karaoke Duet</span>
+                        </div>
+                        <div class="challenge-option">
+                            <span class="challenge-emoji">💃</span>
+                            <span class="challenge-text">Freestyle Dance-Off</span>
+                        </div>
+                        <div class="challenge-option">
+                            <span class="challenge-emoji">🎭</span>
+                            <span class="challenge-text">Dramatic Lip Sync</span>
+                        </div>
+                        <div class="challenge-option">
+                            <span class="challenge-emoji">🏃</span>
+                            <span class="challenge-text">Fashion Runway Walk</span>
+                        </div>
+                        <div class="challenge-option">
+                            <span class="challenge-emoji">🎬</span>
+                            <span class="challenge-text">Movie Scene Reenactment</span>
+                        </div>
+                        <div class="challenge-option">
+                            <span class="challenge-emoji">🎪</span>
+                            <span class="challenge-text">Surprise Performance</span>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Truth or Dare -->
-                <div class="customization-category">
-                    <div class="category-header">
-                        <div class="category-icon">🎭</div>
-                        <div>
-                            <h3>Truth or Dare Prompts</h3>
-                            <span class="category-count">10 Prompts</span>
-                        </div>
+                <!-- Emoji Translator Example -->
+                <div class="game-example">
+                    <div class="game-example-header">
+                        <h4>Emoji Translator - Sample Puzzles</h4>
+                        <p>We'll create 25+ emoji puzzles customized to your love story, favorite movies, and inside jokes!</p>
                     </div>
-                    <div class="truth-dare-grid">
-                        <div class="question-item">Truth: What's your most embarrassing dating story?</div>
-                        <div class="question-item">Dare: Do your best celebrity impression</div>
-                        <div class="question-item">Truth: What's one thing you've never told anyone?</div>
-                        <div class="question-item">Dare: Serenade someone at the wedding</div>
-                        <div class="question-item">Truth: What's your secret guilty pleasure?</div>
-                        <div class="question-item">Dare: Dance like nobody's watching for 30 seconds</div>
-                        <div class="question-item">Truth: What's the worst gift you've ever received?</div>
-                        <div class="question-item">Dare: Tell a joke that makes everyone laugh</div>
-                        <div class="question-item">Truth: Who's your celebrity crush?</div>
-                        <div class="question-item">Dare: Do 5 jumping jacks right now</div>
-                    </div>
-                </div>
-                
-                <!-- The Hot Seat -->
-                <div class="customization-category">
-                    <div class="category-header">
-                        <div class="category-icon">🔥</div>
-                        <div>
-                            <h3>The Hot Seat (Rapid-Fire Questions)</h3>
-                            <span class="category-count">10 Quick Questions</span>
-                        </div>
-                    </div>
-                    <div class="question-list">
-                        <div class="question-item">Coffee or tea?</div>
-                        <div class="question-item">Beach or mountains?</div>
-                        <div class="question-item">Morning person or night owl?</div>
-                        <div class="question-item">Cats or dogs?</div>
-                        <div class="question-item">Sweet or savory?</div>
-                        <div class="question-item">Summer or winter?</div>
-                        <div class="question-item">Books or movies?</div>
-                        <div class="question-item">Introvert or extrovert?</div>
-                        <div class="question-item">Pizza or tacos?</div>
-                        <div class="question-item">Text or call?</div>
-                    </div>
-                    <div class="hot-seat-note">
-                        <h4>How it works:</h4>
-                        <p>One person sits in the hot seat while the kiosk fires off rapid-fire questions. The person in the hot seat has to answer quickly—no time to think! It's fast, funny, and creates hilarious moments as guests struggle to come up with instant answers.</p>
-                    </div>
-                </div>
-                
-                <!-- Emoji Translation Examples -->
-                <div class="customization-category">
-                    <div class="category-header">
-                        <div class="category-icon">😊</div>
-                        <div>
-                            <h3>Emoji Translation Examples</h3>
-                            <span class="category-count">25 Puzzles</span>
-                        </div>
-                    </div>
+                    
                     <div class="emoji-examples-grid">
                         <div class="emoji-example-card">
                             <img src="images/emoji-puzzles-1.png" alt="Emoji Puzzles Examples 1-8" class="emoji-example-img">
@@ -882,339 +753,229 @@
                             <p class="emoji-caption">Puzzles 18-25: From "Best Man" to "Walk Down the Aisle"</p>
                         </div>
                     </div>
+                    
                     <div class="emoji-note">
-                        <p><strong>We'll customize these for you!</strong> These are just examples—we can create emoji puzzles about your love story, inside jokes, favorite movies, or anything else that's meaningful to you.</p>
+                        <h5>We'll Customize These for You!</h5>
+                        <p>These are just examples - we can create emoji puzzles about your love story, inside jokes, favorite movies, or anything else that's meaningful to you. Every puzzle is personalized to make your guests smile and laugh!</p>
                     </div>
                 </div>
-
-            </div>
-
-            <!-- Call to Action -->
-            <div class="game-help-cta">
-                <div class="help-cta-content">
-                    <h3>Ready to Create Your Custom Games?</h3>
-                    <p>We'll work with you to personalize every question, prompt, and challenge to make your celebration uniquely yours. From inside jokes to family stories, we'll help you create games that your guests will never forget.</p>
-                    <a href="#contact" class="btn btn-primary btn-lg">Let's Customize Your Games</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Real Game Interfaces Gallery Section -->
-    <section id="game-screenshots" class="section-game-screenshots">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Real Game Interfaces</h2>
-                <p class="section-subtitle">See exactly what your guests will interact with. Every game is designed to be intuitive, fun, and capture authentic moments.</p>
             </div>
             
-            <div class="screenshots-gallery">
-                <!-- Screenshot 1: Welcome Screen -->
-                <div class="screenshot-item animate-fade-up">
-                    <div class="screenshot-image-wrapper">
-                        <img src="images/game-welcome-screen.png" alt="Welcome Screen - Wedding of the Year" class="screenshot-image" loading="lazy">
-                    </div>
-                    <div class="screenshot-info">
-                        <h3 class="screenshot-title">🎉 Welcome Screen</h3>
-                        <p class="screenshot-description">Guests are greeted with a personalized welcome screen featuring your wedding title and custom branding.</p>
-                        <div class="screenshot-features">
-                            <span class="feature-tag">Custom Names</span>
-                            <span class="feature-tag">Wedding Date</span>
-                            <span class="feature-tag">Beautiful Design</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Screenshot 2: Play for Points -->
-                <div class="screenshot-item animate-fade-up">
-                    <div class="screenshot-image-wrapper">
-                        <img src="images/game-play-for-points.png" alt="Play for Points - Trivia Categories" class="screenshot-image" loading="lazy">
-                    </div>
-                    <div class="screenshot-info">
-                        <h3 class="screenshot-title">🧠 Play for Points</h3>
-                        <p class="screenshot-description">Choose from multiple trivia topics—all customizable to your wedding and relationship!</p>
-                        <div class="screenshot-features">
-                            <span class="feature-tag">Custom Categories</span>
-                            <span class="feature-tag">Point-Based</span>
-                            <span class="feature-tag">Team Leaderboard</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Screenshot 3: Quick Message -->
-                <div class="screenshot-item animate-fade-up">
-                    <div class="screenshot-image-wrapper">
-                        <img src="images/game-quick-message.png" alt="Quick Message Categories" class="screenshot-image" loading="lazy">
-                    </div>
-                    <div class="screenshot-info">
-                        <h3 class="screenshot-title">💌 Quick Message</h3>
-                        <p class="screenshot-description">Guests select a message type and record their heartfelt wishes to the couple.</p>
-                        <div class="screenshot-features">
-                            <span class="feature-tag">Multiple Categories</span>
-                            <span class="feature-tag">HD Video</span>
-                            <span class="feature-tag">Instant Playback</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Screenshot 4: Most Likely To -->
-                <div class="screenshot-item animate-fade-up">
-                    <div class="screenshot-image-wrapper">
-                        <img src="images/game-most-likely-to.png" alt="Most Likely To - Voting Game" class="screenshot-image" loading="lazy">
-                    </div>
-                    <div class="screenshot-info">
-                        <h3 class="screenshot-title">👥 Most Likely To</h3>
-                        <p class="screenshot-description">Guests vote and see results displayed on the big screen in real-time!</p>
-                        <div class="screenshot-features">
-                            <span class="feature-tag">Interactive Voting</span>
-                            <span class="feature-tag">Live Results</span>
-                            <span class="feature-tag">Big Screen</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Screenshot 5: Finish the Sentence -->
-                <div class="screenshot-item animate-fade-up">
-                    <div class="screenshot-image-wrapper">
-                        <img src="images/game-finish-the-sentence.png" alt="Finish the Sentence" class="screenshot-image" loading="lazy">
-                    </div>
-                    <div class="screenshot-info">
-                        <h3 class="screenshot-title">✍️ Finish the Sentence</h3>
-                        <p class="screenshot-description">Pick the funniest answer to complete sentences about the couple!</p>
-                        <div class="screenshot-features">
-                            <span class="feature-tag">A/B/C/D Options</span>
-                            <span class="feature-tag">Video Recorded</span>
-                            <span class="feature-tag">Team Points</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Screenshot 6: End of Night -->
-                <div class="screenshot-item animate-fade-up">
-                    <div class="screenshot-image-wrapper">
-                        <img src="images/game-end-of-night.png" alt="End of Night Challenge" class="screenshot-image" loading="lazy">
-                    </div>
-                    <div class="screenshot-info">
-                        <h3 class="screenshot-title">🌟 End of Night Challenge</h3>
-                        <p class="screenshot-description">The entire venue votes on challenges for the couple or wedding party!</p>
-                        <div class="screenshot-features">
-                            <span class="feature-tag">Live Voting</span>
-                            <span class="feature-tag">Epic Finale</span>
-                            <span class="feature-tag">Unforgettable</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Screenshot 7: End of Night Continued -->
-                <div class="screenshot-item animate-fade-up">
-                    <div class="screenshot-image-wrapper">
-                        <img src="images/game-end-of-night-continued.png" alt="End of Night Challenge Continued" class="screenshot-image" loading="lazy">
-                    </div>
-                    <div class="screenshot-info">
-                        <h3 class="screenshot-title">🌟 End of Night Challenge (Continued)</h3>
-                        <p class="screenshot-description">Scrollable list of challenges ensures there's something for everyone!</p>
-                        <div class="screenshot-features">
-                            <span class="feature-tag">Multiple Options</span>
-                            <span class="feature-tag">Easy Navigation</span>
-                            <span class="feature-tag">Customizable</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Screenshot 8: Emoji Translator -->
-                <div class="screenshot-item animate-fade-up">
-                    <div class="screenshot-image-wrapper">
-                        <img src="images/game-emoji-translator.png" alt="Emoji Translator" class="screenshot-image" loading="lazy">
-                    </div>
-                    <div class="screenshot-info">
-                        <h3 class="screenshot-title">😊 Emoji Translator</h3>
-                        <p class="screenshot-description">Decode emoji puzzles and record your guesses on video!</p>
-                        <div class="screenshot-features">
-                            <span class="feature-tag">Creative Puzzles</span>
-                            <span class="feature-tag">Video Capture</span>
-                            <span class="feature-tag">Custom Content</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Call to Action -->
-            <div class="screenshots-cta">
-                <div class="cta-content">
-                    <h3>Ready to See These Games at Your Wedding?</h3>
-                    <p>Every game is fully customizable with your photos, questions, and personal touches. Your guests will love the interactive experience!</p>
-                    <a href="#pricing" class="btn btn-primary btn-lg">View Pricing & Book Now</a>
-                </div>
+            <div class="customization-cta">
+                <h4>Ready to Create Your Custom Games?</h4>
+                <p>After you book, we'll schedule a call to learn about your relationship, gather stories, and personalize every single question to make your Bold Booth experience unforgettable!</p>
+                <a href="#contact" class="btn btn-primary btn-lg">Let's Customize Your Games</a>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="section-testimonials">
+    <section class="section section-testimonials" id="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">What Our Couples Will Say</h2>
-                <p class="section-subtitle">These are anticipated reviews based on what we expect couples will experience with Bold Booth.</p>
+                <span class="section-label">What Couples Will Say</span>
+                <h2 class="section-title">Reviews We're Excited to Earn</h2>
+                <p class="section-description">Bold Booth is brand new - here's what we expect couples will say after their unforgettable experience</p>
             </div>
             
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <div class="testimonial-badge">Anticipated Review</div>
-                    <h3 class="testimonial-title">More Than Just a Booth—It's a Digital Reunion</h3>
-                    <p class="testimonial-quote">"The best part of our night was knowing that every single guest who participated was captured. We can't wait to sit down with our USB and watch the laughs from the games all over again. Being able to see everyone's faces and hear their 'Hot Seat' answers makes us feel like we can step back into the reception whenever we want. It's the ultimate way to keep the fun alive."</p>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Bold Booth was the BEST investment we made for our wedding! Our guests are still talking about how much fun they had, and we've watched the videos a hundred times. The Fishbowl design meant everyone could watch and cheer - it became the social hub of our entire reception. Worth every penny!</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">💑</div>
+                        <div class="author-info">
+                            <h5>Future Happy Couple</h5>
+                            <p>Anticipated Review - 2026</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="testimonial-card">
-                    <div class="testimonial-badge">Anticipated Review</div>
-                    <h3 class="testimonial-title">The Most Innovative Wedding Entertainment</h3>
-                    <p class="testimonial-quote">"We got so much feedback from our guests about how new and cool the Bold Booth was! People were obsessed with the 10+ game suite, especially the 'Emoji Translator' and 'Most Likely To.' It kept everyone entertained from start to finish, and seeing the live scores on the projector made the whole room feel connected. It's definitely not your average photo booth."</p>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">We wanted our wedding to feel unique and interactive, and Bold Booth delivered beyond our wildest dreams. The games were hilarious, the live scoreboard got everyone involved, and the transparent booth meant EVERYONE could enjoy the fun - not just the people inside. It was pure entertainment from start to finish!</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">💍</div>
+                        <div class="author-info">
+                            <h5>Future Thrilled Newlyweds</h5>
+                            <p>Anticipated Review - 2026</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="testimonial-card">
-                    <div class="testimonial-badge">Anticipated Review</div>
-                    <h3 class="testimonial-title">Seamless, Stress-Free, and Totally Fun</h3>
-                    <p class="testimonial-quote">"Our wedding planner was so impressed with how self-contained everything was. Because Bold Booth uses its own dedicated hotspots, there was zero lag and no technical issues all night. We loved seeing the 'First To' results pop up instantly. It was such a relief to have an innovative piece of tech that just worked, letting us focus on the fun and our guests."</p>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">The USB drive is our most prized wedding keepsake! Watching our friends and family play games, laugh, and share memories is priceless. Bold Booth captured the real, authentic moments that made our wedding special. The team was professional, the tech was flawless, and the entertainment was unforgettable. Can't recommend them enough!</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">🎊</div>
+                        <div class="author-info">
+                            <h5>Future Raving Fans</h5>
+                            <p>Anticipated Review - 2026</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="section-pricing">
+    <section class="section section-pricing" id="pricing">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">All-Inclusive Pricing</h2>
-                <p class="section-subtitle">One simple price. Everything included. No hidden fees.</p>
+                <span class="section-label">All-Inclusive Pricing</span>
+                <h2 class="section-title">Everything You Need, One Simple Price</h2>
+                <p class="section-description">No hidden fees, no surprise charges - just unforgettable entertainment for your celebration</p>
             </div>
             
-            <div class="pricing-card">
-                <div class="pricing-header">
-                    <div class="pricing-badge">All-Inclusive Package</div>
-                    <h3 class="pricing-title">The Bold Booth Experience</h3>
-                    <p class="pricing-subtitle">Everything you need for unforgettable wedding entertainment</p>
-                </div>
-                
-                <div class="pricing-amount">
-                    <div class="price">$3,200</div>
-                    <p class="price-note">All-inclusive pricing • No hidden fees</p>
-                </div>
-                
-                <ul class="pricing-features">
-                    <li><span class="check">✓</span> All 10+ Interactive Games</li>
-                    <li><span class="check">✓</span> 4 Hours of Entertainment (more hours available on request)</li>
-                    <li><span class="check">✓</span> The Fishbowl Booth with Crystal-Clear Rear Wall</li>
-                    <li><span class="check">✓</span> Live Scoreboard Display (projector or monitor)</li>
-                    <li><span class="check">✓</span> Professional HD Video Recording</li>
-                    <li><span class="check">✓</span> Branded USB Drive Delivered Within 1 Week or Less</li>
-                    <li><span class="check">✓</span> Optional Online Viewing Page for All Guests</li>
-                    <li><span class="check">✓</span> Client Portal for Full Customization</li>
-                    <li><span class="check">✓</span> Professional Setup & Breakdown</li>
-                    <li><span class="check">✓</span> Dedicated On-Site Support</li>
-                    <li><span class="check">✓</span> 100% Uptime Guarantee</li>
-                    <li><span class="check">✓</span> Private Local Network (No Venue WiFi Needed)</li>
-                </ul>
-                
-                <div class="pricing-cta">
-                    <a href="#contact" class="btn btn-primary btn-lg">Book Your Date</a>
-                </div>
-            </div>
-            
-            <!-- Premium Upgrade Section -->
-            <div class="premium-upgrade-section">
-                <div class="premium-upgrade-header">
-                    <h3>Premium Add-On</h3>
-                    <p>Upgrade to a handcrafted keepsake presentation</p>
-                </div>
-                
-                <div class="premium-upgrade-grid">
-                    <div class="premium-upgrade-image">
-                        <img src="images/wooden-usb-package.jpg" alt="Handcrafted Wooden USB Package" class="wooden-package-img">
+            <div class="pricing-container">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-badge">Most Popular</div>
+                        <h3 class="pricing-title">The Bold Booth Experience</h3>
+                        <div class="pricing-price">$3,200</div>
+                        <div class="pricing-period">One-Time Investment</div>
                     </div>
                     
-                    <div class="premium-upgrade-details">
-                        <h4>Handcrafted Wooden USB Package</h4>
-                        <ul class="premium-features">
-                            <li>Handcrafted wooden presentation box</li>
-                            <li>Laser-engraved USB drive with your names & date</li>
-                            <li>Premium presentation for your memories</li>
-                            <li>Perfect keepsake for anniversaries</li>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li class="pricing-feature">
+                                <span class="feature-check">✓</span>
+                                <span class="feature-text"><strong>4 Hours of Coverage</strong> - Plenty of time for all your guests to play (more hours available if needed)</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <span class="feature-check">✓</span>
+                                <span class="feature-text"><strong>10+ Interactive Games</strong> - Fully customized with your photos, questions, and personal touches</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <span class="feature-check">✓</span>
+                                <span class="feature-text"><strong>Live Big Screen Display</strong> - Real-time scores and game results on your venue's projector</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <span class="feature-check">✓</span>
+                                <span class="feature-text"><strong>Professional HD Cameras</strong> - Crystal-clear video quality that looks incredible</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <span class="feature-check">✓</span>
+                                <span class="feature-text"><strong>Complete Setup & Takedown</strong> - We arrive early, handle everything, and leave no trace</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <span class="feature-check">✓</span>
+                                <span class="feature-text"><strong>On-Site Attendant</strong> - Friendly tech support throughout your event</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <span class="feature-check">✓</span>
+                                <span class="feature-text"><strong>Private Network Technology</strong> - No WiFi needed, 100% uptime guarantee</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <span class="feature-check">✓</span>
+                                <span class="feature-text"><strong>All Videos Delivered on USB Drive</strong> - Yours to keep forever (delivery within 1 week or less)</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <span class="feature-check">✓</span>
+                                <span class="feature-text"><strong>Optional Guest Viewing Page</strong> - Share a link so guests can watch & download their videos</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <span class="feature-check">✓</span>
+                                <span class="feature-text"><strong>Pre-Event Customization Call</strong> - We work with you to personalize every detail</span>
+                            </li>
                         </ul>
-                        <div class="premium-price-tag">+$150</div>
+                        
+                        <div class="pricing-cta">
+                            <a href="#contact" class="btn btn-primary btn-lg">Book Your Date Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="pricing-note">
-                <h4>Perfect for Anniversaries Too!</h4>
-                <p>Bold Booth isn't just for weddings—celebrate milestone anniversaries (10th, 25th, 50th+) with the same interactive entertainment that brings generations together.</p>
+                
+                <!-- Premium USB Package Add-On -->
+                <div class="premium-upgrade">
+                    <div class="premium-content">
+                        <div class="premium-info">
+                            <h3>Premium Add-On: Handcrafted Wooden USB Package</h3>
+                            <div class="premium-price">+ $150</div>
+                            <ul class="premium-features">
+                                <li>Gorgeous handcrafted wooden USB drive engraved with your names & wedding date</li>
+                                <li>Beautiful wooden presentation box - a keepsake you'll treasure forever</li>
+                                <li>Premium packaging perfect for displaying in your home</li>
+                                <li>Makes a stunning anniversary gift or family heirloom</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary">Add Premium USB Package</a>
+                        </div>
+                        <div class="premium-upgrade-image">
+                            <img src="images/wooden-usb-package.jpg" alt="Handcrafted Wooden USB Package" class="wooden-package-img">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
     <!-- FAQ Section -->
-    <section id="faq" class="section-faq">
+    <section class="section section-faq" id="faq">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-subtitle">Everything you need to know about Bold Booth</p>
+                <span class="section-label">Questions & Answers</span>
+                <h2 class="section-title">Everything You Need to Know</h2>
+                <p class="section-description">Have a question we haven't answered? Just ask!</p>
             </div>
             
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>How far in advance should we book?</h4>
-                        <span class="faq-icon">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Most couples book Bold Booth 8-12 months in advance to secure their date. Popular wedding season dates (May-October) fill up quickly, so we recommend reaching out as soon as you have your venue and date confirmed.
+            <div class="faq-container">
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-question-text">How far in advance should we book Bold Booth?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                We recommend booking as early as possible! Since we're brand new and only have a limited number of booths, dates are filling up fast. Ideally, book 3-6 months in advance to secure your preferred date. That said, we'll do our best to accommodate last-minute bookings if we have availability!
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>How do we receive all the videos after our event?</h4>
-                        <span class="faq-icon">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Within one week or less, we'll deliver a branded USB drive containing every video message, game highlight, and memorable moment from your event. We also offer an optional online viewing page where you and your guests can watch and download videos anytime.
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-question-text">When do we receive our videos?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Your USB drive will be delivered within 1 week or less after your event! We know you're eager to relive those memories, so we work fast. All videos are professionally edited, organized by game type, and delivered on a beautiful USB drive ready to plug in and watch. If you choose the optional guest viewing page, that link is available within 24-48 hours so your guests can start downloading their favorite moments right away!
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>Can we customize the games and questions?</h4>
-                        <span class="faq-icon">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Absolutely! Through our Client Portal, you'll have complete control to customize every question, prompt, and challenge. Add custom emoji puzzles about your love story, personalized truth-or-dare prompts, custom Q&A video questions, and relationship milestones. We also provide 100+ pre-written questions if you want a starting point.
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-question-text">Can we customize the games with our own questions and photos?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Absolutely! In fact, customization is one of our favorite parts. After you book, we'll schedule a fun customization call where we learn about your relationship, gather inside jokes and stories, and collect photos. Then we'll personalize every single game - trivia questions about your love story, "Most Likely To" scenarios that match your personalities, emoji puzzles about your favorite things, and more. We want Bold Booth to feel like it was made just for you - because it is!
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>What if our venue has poor WiFi?</h4>
-                        <span class="faq-icon">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            No problem! Bold Booth runs on a private local network and doesn't rely on your venue's WiFi at all. We bring our own dedicated hotspots, ensuring 100% uptime and zero lag—even in venues with no internet connection. This is one of our biggest advantages over traditional photo booths.
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-question-text">What if our venue doesn't have WiFi?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                No problem at all! Bold Booth runs on its own private network - we don't need WiFi, cellular signal, or any internet connection. Everything operates locally between the booth and the big screen display. This means zero lag, zero technical issues, and 100% uptime guarantee no matter where your venue is located. Barn wedding in the middle of nowhere? We've got you covered!
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>What about the online viewing page?</h4>
-                        <span class="faq-icon">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            The online viewing page is an optional add-on that lets you and your guests watch all the videos anytime, from anywhere. It's perfect for sharing highlights with guests who couldn't attend, or for reliving memories on anniversaries. The page is password-protected and can stay live as long as you'd like.
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="faq-question-text">What's the guest viewing page, and how does it work?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                The guest viewing page is an optional add-on (included in your package!) that lets you share all the Bold Booth videos with your wedding guests. We create a private, password-protected webpage where all the videos are uploaded. You share the link with your guests, and they can watch, download, and share their favorite moments. It's perfect for guests who want to save the hilarious videos they recorded or relive the fun after your wedding. The page stays active for 90 days, giving everyone plenty of time to download what they want!
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1223,208 +984,299 @@
     </section>
 
     <!-- Availability Check Section -->
-    <section id="availability" class="section-availability">
+    <section class="section section-availability" id="availability">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Check Your Date</h2>
-                <p class="section-subtitle">See if Bold Booth is available for your wedding date</p>
+                <span class="section-label">Check Availability</span>
+                <h2 class="section-title">Is Your Date Available?</h2>
+                <p class="section-description">Let us know your wedding date and we'll get back to you right away</p>
             </div>
             
-            <div class="availability-form-wrapper">
-                <form class="quick-check-form" id="quickCheckForm">
-                    <div class="form-row">
+            <div class="availability-container">
+                <div class="availability-card">
+                    <form class="availability-form" id="availabilityForm">
                         <div class="form-group">
-                            <label for="quickName">Your Name *</label>
-                            <input type="text" id="quickName" name="name" required>
+                            <label for="availDate" class="form-label">Wedding Date</label>
+                            <input type="date" id="availDate" name="date" class="form-input" required>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="quickDate">Wedding Date *</label>
-                            <input type="date" id="quickDate" name="date" required>
+                            <label for="availName" class="form-label">Your Name</label>
+                            <input type="text" id="availName" name="name" class="form-input" placeholder="Enter your name" required>
                         </div>
-                    </div>
-                    
-                    <div class="form-row">
+                        
                         <div class="form-group">
-                            <label for="quickEmail">Email *</label>
-                            <input type="email" id="quickEmail" name="email" required>
+                            <label for="availEmail" class="form-label">Email Address</label>
+                            <input type="email" id="availEmail" name="email" class="form-input" placeholder="your@email.com" required>
                         </div>
-                        <div class="form-group">
-                            <label for="quickPhone">Phone *</label>
-                            <input type="tel" id="quickPhone" name="phone" required>
-                        </div>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary btn-lg">Check Availability</button>
-                    
-                    <p class="availability-note">✨ Instant confirmation • Response within 24 hours</p>
-                </form>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg form-submit">Check Availability</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section-contact">
+    <section class="section section-contact" id="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Let's Talk About Your Wedding</h2>
-                <p class="section-subtitle">Ready to bring Bold Booth to your celebration? We're here to answer all your questions.</p>
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Let's Make Your Wedding Unforgettable</h2>
+                <p class="section-description">Ready to book? Have questions? We'd love to hear from you!</p>
             </div>
             
-            <div class="contact-cards">
+            <div class="contact-container">
                 <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email Us</h3>
-                    <a href="mailto:contact@theboldbooth.com" class="contact-link">contact@theboldbooth.com</a>
-                    <p>We typically respond within 24 hours</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Your Name</label>
+                            <input type="text" id="contactName" name="name" class="form-input" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail" class="form-label">Email Address</label>
+                            <input type="email" id="contactEmail" name="email" class="form-input" placeholder="your@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactPhone" class="form-label">Phone Number (Optional)</label>
+                            <input type="tel" id="contactPhone" name="phone" class="form-input" placeholder="(555) 123-4567">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactDate" class="form-label">Wedding Date (Optional)</label>
+                            <input type="date" id="contactDate" name="date" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea id="contactMessage" name="message" class="form-textarea" rows="5" placeholder="Tell us about your wedding, ask questions, or let us know how we can help!" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <p>Or email us directly at:</p>
+                        <a href="mailto:contact@theboldbooth.com" class="contact-email">contact@theboldbooth.com</a>
+                    </div>
                 </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">📞</div>
-                    <h3>Request Callback</h3>
-                    <a href="#callback-form" class="contact-link">Fill out the form below</a>
-                    <p>We'll call you at your preferred time</p>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">⏰</div>
-                    <h3>Response Time</h3>
-                    <p class="contact-link">Within 24 Hours</p>
-                    <p>Fast, friendly, and helpful</p>
-                </div>
-            </div>
-            
-            <div class="contact-form-wrapper" id="callback-form">
-                <h3>Request a Callback</h3>
-                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                    <!-- Web3Forms Access Key -->
-                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                    <input type="hidden" name="redirect" value="https://theboldbooth.com/thank-you">
-                    <input type="hidden" name="from_name" value="Bold Booth Contact Form">
-                    <input type="hidden" name="subject" value="New Callback Request from Bold Booth Website">
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Your Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="callback_day">Best Day to Call</label>
-                            <select id="callback_day" name="callback_day">
-                                <option value="">Select a day</option>
-                                <option value="Monday">Monday</option>
-                                <option value="Tuesday">Tuesday</option>
-                                <option value="Wednesday">Wednesday</option>
-                                <option value="Thursday">Thursday</option>
-                                <option value="Friday">Friday</option>
-                                <option value="Saturday">Saturday</option>
-                                <option value="Sunday">Sunday</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="callback_time">Best Time to Call</label>
-                            <select id="callback_time" name="callback_time">
-                                <option value="">Select a time</option>
-                                <option value="Morning (9am-12pm)">Morning (9am-12pm)</option>
-                                <option value="Afternoon (12pm-5pm)">Afternoon (12pm-5pm)</option>
-                                <option value="Evening (5pm-8pm)">Evening (5pm-8pm)</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="wedding_date">Wedding Date (Optional)</label>
-                            <input type="date" id="wedding_date" name="wedding_date">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="venue">Venue Name (Optional)</label>
-                        <input type="text" id="venue" name="venue">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="urgent_question">Do you have an urgent question?</label>
-                        <input type="text" id="urgent_question" name="urgent_question" placeholder="e.g., Need to know if my date is available">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Additional Message (Optional)</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your wedding or any specific questions..."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary btn-lg">Request Callback</button>
-                    
-                    <div class="form-success" id="formSuccess">
-                        ✅ Thank you! We'll call you within 24 hours.
-                    </div>
-                    
-                    <div class="form-error" id="formError">
-                        ❌ Something went wrong. Please try again or email us directly.
-                    </div>
-                    
-                    <p class="form-note">🔒 All information is kept confidential and will never be shared.</p>
-                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="images/logo.png" alt="Bold Booth Logo" class="footer-logo-img">
-                    <p class="footer-brand-tagline">Be Bold</p>
-                    <p class="footer-tagline">Transform your wedding into an interactive entertainment experience. Create memories that last forever with Bold Booth.</p>
-                    
-                    <div class="footer-contact">
-                        <a href="mailto:contact@theboldbooth.com" class="footer-email">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" fill="none"/>
-                            </svg>
-                            contact@theboldbooth.com
-                        </a>
-                    </div>
-                    
+                <div class="footer-section footer-logo-section">
+                    <img src="images/logo.png" alt="Bold Booth Logo" class="footer-logo">
+                    <p class="footer-tagline">Be Bold</p>
+                    <p class="footer-description">Interactive wedding entertainment that creates unforgettable memories. The original "Fishbowl" booth experience.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#overview" class="footer-link">How It Works</a></li>
+                        <li><a href="#games" class="footer-link">Games</a></li>
+                        <li><a href="#pricing" class="footer-link">Pricing</a></li>
+                        <li><a href="#faq" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Get Started</h3>
+                    <ul class="footer-links">
+                        <li><a href="#contact" class="footer-link">Book Now</a></li>
+                        <li><a href="#availability" class="footer-link">Check Availability</a></li>
+                        <li><a href="#testimonials" class="footer-link">Reviews</a></li>
+                        <li><a href="mailto:contact@theboldbooth.com" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
                     <div class="footer-social">
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="TikTok">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-                            </svg>
-                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Facebook">👍</a>
+                        <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+                        <a href="mailto:contact@theboldbooth.com" class="social-link" aria-label="Email">✉️</a>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2026 Bold Booth. All rights reserved.</p>
+                <p class="footer-copyright">&copy; 2026 Bold Booth. All rights reserved. Be Bold. Create Memories.</p>
             </div>
         </div>
     </footer>
-
     <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        const navOverlay = document.getElementById('navOverlay');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+        });
+
+        navOverlay.addEventListener('click', () => {
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            navOverlay.classList.remove('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                navOverlay.classList.remove('active');
+            });
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all FAQ items
+                faqItems.forEach(faq => faq.classList.remove('active'));
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form Submission - Availability Check
+        const availabilityForm = document.getElementById('availabilityForm');
+        if (availabilityForm) {
+            availabilityForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                const date = formData.get('date');
+                const name = formData.get('name');
+                const email = formData.get('email');
+                
+                // Create mailto link with form data
+                const subject = encodeURIComponent(`Bold Booth Availability Check - ${date}`);
+                const body = encodeURIComponent(`Hi Bold Booth team,\n\nI'd like to check availability for Bold Booth on ${date}.\n\nName: ${name}\nEmail: ${email}\n\nPlease let me know if this date is available and next steps to book!\n\nThank you!`);
+                
+                window.location.href = `mailto:contact@theboldbooth.com?subject=${subject}&body=${body}`;
+                
+                // Show confirmation
+                alert('Opening your email client... Please send the email to check availability!');
+            });
+        }
+
+        // Form Submission - Contact Form
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                const name = formData.get('name');
+                const email = formData.get('email');
+                const phone = formData.get('phone') || 'Not provided';
+                const date = formData.get('date') || 'Not provided';
+                const message = formData.get('message');
+                
+                // Create mailto link with form data
+                const subject = encodeURIComponent(`Bold Booth Inquiry from ${name}`);
+                const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nWedding Date: ${date}\n\nMessage:\n${message}`);
+                
+                window.location.href = `mailto:contact@theboldbooth.com?subject=${subject}&body=${body}`;
+                
+                // Show confirmation
+                alert('Opening your email client... Please send the email and we\'ll get back to you right away!');
+            });
+        }
+
+        // Header Scroll Effect
+        let lastScroll = 0;
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
+            } else {
+                header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.12)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Loading Screen
+        window.addEventListener('load', () => {
+            const loadingScreen = document.querySelector('.loading-screen');
+            if (loadingScreen) {
+                setTimeout(() => {
+                    loadingScreen.classList.add('hidden');
+                }, 500);
+            }
+        });
+
+        // Intersection Observer for Fade-in Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements with fade-in animation
+        const animatedElements = document.querySelectorAll('.overview-card, .game-card, .testimonial-card, .benefit-card');
+        animatedElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Console Welcome Message
+        console.log('%c🎉 Welcome to Bold Booth! 🎉', 'font-size: 20px; font-weight: bold; color: #FF1744;');
+        console.log('%cBe Bold. Create Memories.', 'font-size: 14px; color: #666;');
+    </script>
 </body>
 </html>
