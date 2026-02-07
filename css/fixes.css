@@ -1,0 +1,72 @@
+/* ============================================
+   Bold Booth - Emergency Fixes
+   Quick fixes for display issues
+   ============================================ */
+
+/* TEMPORARILY HIDE IMAGE-HEAVY SECTIONS */
+.section-booth-interface,
+.section-fishbowl-booth,
+.section-guest-journey,
+.section-scoreboard,
+.game-screenshots {
+    display: none;
+}
+
+/* Ensure all images have max sizes */
+.fishbowl-image-card img,
+.fishbowl-img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.booth-interface-image {
+    max-width: 300px !important;
+}
+
+/* Fix fishbowl video size */
+.fishbowl-video {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Center and constrain large images */
+.fishbowl-showcase,
+.booth-showcase {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Handle missing images gracefully */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix navigation spacing */
+.nav-content {
+    padding: 0 var(--spacing-lg);
+}
+
+.logo-image {
+    max-height: 40px;
+    width: auto;
+}
+
+/* Make logo text bigger when no image */
+.logo-text {
+    font-size: 1.5rem !important;
+}
+
+/* Ensure sections don't overflow */
+section {
+    overflow-x: hidden;
+}
+
+/* Fix large content */
+.section-fishbowl-booth img,
+.section-booth-interface img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
