@@ -1,0 +1,299 @@
+/* ============================================
+   Bold Booth - Wedding Games Section Styles
+   For Wedding & Anniversary Events
+   ============================================ */
+
+/* ===== WEDDING GAMES SECTION ===== */
+.section-wedding-games {
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.03), rgba(124, 77, 255, 0.03));
+    padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+.section-wedding-games .section-label {
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.15), rgba(124, 77, 255, 0.15));
+    color: var(--color-primary);
+}
+
+/* ===== WEDDING GAMES GRID ===== */
+.wedding-games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* ===== WEDDING GAME CARDS ===== */
+.wedding-game-card {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-base);
+    border: 3px solid var(--color-border-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.wedding-game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-2xl);
+    border-color: var(--color-primary);
+}
+
+/* Top gradient line animation */
+.wedding-game-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transition-base);
+}
+
+.wedding-game-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* ===== WEDDING GAME NUMBER BADGE ===== */
+.wedding-game-card .game-number {
+    position: absolute;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.125rem;
+    box-shadow: var(--shadow-md);
+    z-index: 2;
+}
+
+/* ===== WEDDING GAME HEADER ===== */
+.wedding-game-card .game-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.wedding-game-card .game-emoji {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.wedding-game-card .game-title-group {
+    flex: 1;
+}
+
+.wedding-game-card .game-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.3;
+}
+
+.wedding-game-card .game-type {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* ===== WEDDING GAME EXPLANATION ===== */
+.wedding-game-card .game-explanation {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-lg);
+    font-size: 0.9375rem;
+}
+
+/* ===== WEDDING GAME TAGS ===== */
+.wedding-game-card .game-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.wedding-game-card .tag {
+    display: inline-block;
+    padding: var(--spacing-2xs) var(--spacing-sm);
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1), rgba(124, 77, 255, 0.1));
+    color: var(--color-primary);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===== WEDDING GAMES CTA ===== */
+.wedding-games-cta {
+    text-align: center;
+    padding: var(--spacing-3xl);
+    background: white;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    border: 3px solid var(--color-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.wedding-games-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+}
+
+.wedding-games-cta h3 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-primary);
+}
+
+.wedding-games-cta p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.7;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wedding-games-cta .btn {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+    .wedding-games-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .wedding-game-card .game-number {
+        top: var(--spacing-md);
+        right: var(--spacing-md);
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .wedding-game-card .game-emoji {
+        font-size: 2.5rem;
+    }
+    
+    .wedding-game-card .game-header {
+        gap: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .wedding-game-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .wedding-game-card .game-title {
+        font-size: 1.125rem;
+    }
+    
+    .wedding-games-cta {
+        padding: var(--spacing-2xl);
+    }
+    
+    .wedding-games-cta h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ===== ANIMATION FOR STAGGERED ENTRY ===== */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.wedding-game-card {
+    animation: fadeInScale 0.5s ease forwards;
+}
+
+.wedding-game-card:nth-child(1) { animation-delay: 0.05s; }
+.wedding-game-card:nth-child(2) { animation-delay: 0.1s; }
+.wedding-game-card:nth-child(3) { animation-delay: 0.15s; }
+.wedding-game-card:nth-child(4) { animation-delay: 0.2s; }
+.wedding-game-card:nth-child(5) { animation-delay: 0.25s; }
+.wedding-game-card:nth-child(6) { animation-delay: 0.3s; }
+.wedding-game-card:nth-child(7) { animation-delay: 0.35s; }
+.wedding-game-card:nth-child(8) { animation-delay: 0.4s; }
+.wedding-game-card:nth-child(9) { animation-delay: 0.45s; }
+.wedding-game-card:nth-child(10) { animation-delay: 0.5s; }
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .wedding-game-card {
+        page-break-inside: avoid;
+        border: 2px solid var(--color-border-light);
+        box-shadow: none;
+    }
+    
+    .wedding-game-card .game-number {
+        background: var(--color-text-primary);
+    }
+    
+    .wedding-games-cta {
+        border: 2px solid var(--color-primary);
+        box-shadow: none;
+    }
+}
+
+/* ===== ACCESSIBILITY ===== */
+.wedding-game-card:focus-within {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* ===== HOVER STATES FOR TOUCH DEVICES ===== */
+@media (hover: none) and (pointer: coarse) {
+    .wedding-game-card:hover {
+        transform: none;
+    }
+    
+    .wedding-game-card:active {
+        transform: scale(0.98);
+    }
+}
+
+/* ===== DARK MODE SUPPORT (OPTIONAL) ===== */
+@media (prefers-color-scheme: dark) {
+    .section-wedding-games {
+        background: linear-gradient(135deg, rgba(255, 23, 68, 0.08), rgba(124, 77, 255, 0.08));
+    }
+    
+    .wedding-game-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .wedding-games-cta {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: var(--color-primary);
+    }
+}
