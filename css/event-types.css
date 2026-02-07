@@ -1,0 +1,298 @@
+/* ============================================
+   Bold Booth - Event Types Section Styles
+   Weddings, Birthdays, Bar/Bat Mitzvahs
+   ============================================ */
+
+/* ===== EVENT TYPES SECTION ===== */
+.section-event-types {
+    background: white;
+    padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+/* ===== EVENT TYPES GRID ===== */
+.event-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-3xl);
+}
+
+/* ===== EVENT TYPE CARDS ===== */
+.event-type-card {
+    background: white;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-base);
+    border: 3px solid transparent;
+    position: relative;
+}
+
+.event-type-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-2xl);
+}
+
+/* Wedding card - Red border */
+.event-type-card.wedding {
+    border-color: var(--color-primary);
+}
+
+.event-type-card.wedding:hover {
+    box-shadow: 0 20px 40px rgba(255, 23, 68, 0.3);
+}
+
+/* Birthday card - Gold border */
+.event-type-card.birthday {
+    border-color: var(--color-accent);
+}
+
+.event-type-card.birthday:hover {
+    box-shadow: 0 20px 40px rgba(255, 193, 7, 0.3);
+}
+
+/* Mitzvah card - Purple border */
+.event-type-card.mitzvah {
+    border-color: var(--color-secondary);
+}
+
+.event-type-card.mitzvah:hover {
+    box-shadow: 0 20px 40px rgba(124, 77, 255, 0.3);
+}
+
+/* ===== EVENT TYPE HEADER ===== */
+.event-type-header {
+    padding: var(--spacing-2xl);
+    text-align: center;
+    color: white;
+}
+
+/* Wedding header - Red gradient */
+.event-type-card.wedding .event-type-header {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+}
+
+/* Birthday header - Gold gradient */
+.event-type-card.birthday .event-type-header {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+}
+
+/* Mitzvah header - Purple gradient */
+.event-type-card.mitzvah .event-type-header {
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark));
+}
+
+.event-type-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    display: block;
+}
+
+.event-type-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.3;
+}
+
+.event-type-price {
+    font-size: 2rem;
+    font-weight: 800;
+    opacity: 0.95;
+    line-height: 1;
+}
+
+/* ===== EVENT TYPE CONTENT ===== */
+.event-type-content {
+    padding: var(--spacing-2xl);
+}
+
+.event-type-description {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.7;
+    font-size: 0.9375rem;
+}
+
+/* ===== EVENT TYPE FEATURES ===== */
+.event-type-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: var(--spacing-xl);
+}
+
+.event-type-features li {
+    padding: var(--spacing-sm) 0;
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    line-height: 1.6;
+    font-size: 0.9375rem;
+}
+
+.event-type-features li::before {
+    content: "✓";
+    font-weight: bold;
+    font-size: 1.125rem;
+    flex-shrink: 0;
+}
+
+/* Color-coded checkmarks */
+.event-type-card.wedding .event-type-features li::before {
+    color: var(--color-primary);
+}
+
+.event-type-card.birthday .event-type-features li::before {
+    color: var(--color-accent-dark);
+}
+
+.event-type-card.mitzvah .event-type-features li::before {
+    color: var(--color-secondary);
+}
+
+/* ===== EVENT TYPE CTA BUTTON ===== */
+.event-type-card .btn {
+    width: 100%;
+}
+
+/* ===== EVENT TYPES NOTICE (WARNING BOX) ===== */
+.event-types-notice {
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 193, 7, 0.1));
+    border-left: 4px solid var(--color-warning);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    margin-top: var(--spacing-2xl);
+}
+
+.event-types-notice h4 {
+    color: var(--color-warning);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-weight: 700;
+}
+
+.event-types-notice h4::before {
+    content: "⚠️";
+    font-size: 1.5rem;
+}
+
+.event-types-notice p {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+    font-size: 0.9375rem;
+}
+
+.event-types-notice strong {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+    .event-types-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .event-type-header {
+        padding: var(--spacing-xl);
+    }
+    
+    .event-type-icon {
+        font-size: 2.5rem;
+    }
+    
+    .event-type-title {
+        font-size: 1.25rem;
+    }
+    
+    .event-type-price {
+        font-size: 1.75rem;
+    }
+    
+    .event-type-content {
+        padding: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 480px) {
+    .event-types-notice {
+        padding: var(--spacing-lg);
+    }
+    
+    .event-types-notice h4 {
+        font-size: 1.125rem;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ===== ANIMATION FOR CARDS ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.event-type-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.event-type-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.event-type-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.event-type-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .event-type-card {
+        page-break-inside: avoid;
+        border: 2px solid var(--color-border-light);
+        box-shadow: none;
+    }
+    
+    .event-type-header {
+        background: var(--color-bg-secondary) !important;
+        color: var(--color-text-primary) !important;
+    }
+    
+    .event-types-notice {
+        border: 2px solid var(--color-warning);
+        background: white;
+    }
+}
+
+/* ===== ACCESSIBILITY ===== */
+.event-type-card:focus-within {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* ===== HOVER STATES FOR TOUCH DEVICES ===== */
+@media (hover: none) and (pointer: coarse) {
+    .event-type-card:hover {
+        transform: none;
+    }
+    
+    .event-type-card:active {
+        transform: scale(0.98);
+    }
+}
