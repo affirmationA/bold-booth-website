@@ -1,0 +1,233 @@
+/* ============================================
+   Bold Booth - Party Games Section Styles
+   For Birthday & Graduation Events
+   ============================================ */
+
+/* ===== PARTY GAMES SECTION ===== */
+.section-party-games {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.05), rgba(255, 152, 0, 0.05));
+    padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+.section-party-games .section-label {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15), rgba(255, 152, 0, 0.15));
+    color: #f57c00;
+}
+
+/* ===== PARTY GAMES GRID ===== */
+.party-games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* ===== PARTY GAME CARDS ===== */
+.party-game-card {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-base);
+    border: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.party-game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-2xl);
+}
+
+/* Core game styling (red border) */
+.party-game-card.core-game {
+    border-color: var(--color-primary);
+}
+
+.party-game-card.core-game::before {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+}
+
+/* Expansion game styling (purple border) */
+.party-game-card.expansion-game {
+    border-color: var(--color-secondary);
+}
+
+.party-game-card.expansion-game::before {
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-secondary-light));
+}
+
+/* Top gradient line animation */
+.party-game-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transition-base);
+}
+
+.party-game-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* ===== GAME NUMBER BADGE ===== */
+.game-number {
+    position: absolute;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.125rem;
+    box-shadow: var(--shadow-md);
+    z-index: 2;
+}
+
+/* ===== GAME HEADER ===== */
+.game-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.game-emoji {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.game-title-group {
+    flex: 1;
+}
+
+.game-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.3;
+}
+
+.game-type {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* ===== GAME EXPLANATION ===== */
+.game-explanation {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-lg);
+    font-size: 0.9375rem;
+}
+
+/* ===== GAME TAGS ===== */
+.game-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.tag {
+    display: inline-block;
+    padding: var(--spacing-2xs) var(--spacing-sm);
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1), rgba(124, 77, 255, 0.1));
+    color: var(--color-primary);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===== PARTY GAMES CTA ===== */
+.party-games-cta {
+    text-align: center;
+    padding: var(--spacing-3xl);
+    background: white;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    border: 3px solid var(--color-secondary);
+}
+
+.party-games-cta h3 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-primary);
+}
+
+.party-games-cta p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.7;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+    .party-games-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .game-number {
+        top: var(--spacing-md);
+        right: var(--spacing-md);
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .game-emoji {
+        font-size: 2.5rem;
+    }
+    
+    .game-header {
+        gap: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .party-game-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .game-title {
+        font-size: 1.125rem;
+    }
+    
+    .party-games-cta {
+        padding: var(--spacing-2xl);
+    }
+    
+    .party-games-cta h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .party-game-card {
+        page-break-inside: avoid;
+        border: 2px solid var(--color-border-light);
+        box-shadow: none;
+    }
+    
+    .game-number {
+        background: var(--color-text-primary);
+    }
+}
