@@ -3,7 +3,8 @@
    Quick fixes for display issues
    ============================================ */
 
-/* TEMPORARILY HIDE IMAGE-HEAVY SECTIONS */
+/* IMAGE-HEAVY SECTIONS NOW VISIBLE - ALL IMAGES UPLOADED! ✅ */
+/*
 .section-booth-interface,
 .section-fishbowl-booth,
 .section-guest-journey,
@@ -11,6 +12,7 @@
 .game-screenshots {
     display: none;
 }
+*/
 
 /* Ensure all images have max sizes */
 .fishbowl-image-card img,
